@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
       <NavBar/>
       <Routes>
-      
+      jfdjytu
         <Route path='/Newton' element={<Newton/>}/>
         <Route path='/Bisection' element={<Bisection/>}/>
 
