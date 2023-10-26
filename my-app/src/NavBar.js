@@ -7,8 +7,9 @@ export const NavBar = () =>{
         <>
           {[false].map((expand) => (
             <Navbar key={expand} bg="dark"variant="dark" expand={expand} className="mb-3">
-              <Container fluid>
-                <Navbar.Brand >Numer Project</Navbar.Brand>
+              <Container fluid><br></br>
+              <br></br>
+                <Navbar.Brand style={{ fontSize: '30px' , fontWeight: 'bold'}}>Numerical Method</Navbar.Brand>
 
 
                 <Navbar.Offcanvas
@@ -25,14 +26,18 @@ export const NavBar = () =>{
 
                         <NavDropdown
                           title="Interpolation"
-                          id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                          id={`offcanvasNavbarDropdown-expand-${expand}`}
+                          style={{ fontSize: '20px' }}
+                          >
                           <NavDropdown.Item href="/Newton">Newton</NavDropdown.Item><NavDropdown.Divider />
                           <NavDropdown.Item href="/Lagrange">Lagrange</NavDropdown.Item><NavDropdown.Divider />
                         </NavDropdown>
 
                         <NavDropdown
                           title="Root of equation"
-                          id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                          id={`offcanvasNavbarDropdown-expand-${expand}`}
+                          style={{ fontSize: '20px' }}
+                          >
                           <NavDropdown.Item href="/Bisection">Bisection</NavDropdown.Item><NavDropdown.Divider />
                           <NavDropdown.Item href="/Graphical">Graphical</NavDropdown.Item><NavDropdown.Divider />
                           <NavDropdown.Item href="/Onepoint">Onepoint</NavDropdown.Item><NavDropdown.Divider />
@@ -43,7 +48,9 @@ export const NavBar = () =>{
 
                         <NavDropdown
                           title="Solutions Root of equation"
-                          id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                          id={`offcanvasNavbarDropdown-expand-${expand}`}
+                          style={{ fontSize: '20px' }}
+                          >
                           <NavDropdown.Item href="/Gauss_Jordan">Gauss_Jordan</NavDropdown.Item><NavDropdown.Divider />
                           <NavDropdown.Item href="/Gauss_elimination">Gauss_elimination</NavDropdown.Item><NavDropdown.Divider />
                         </NavDropdown>
