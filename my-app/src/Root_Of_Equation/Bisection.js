@@ -1,6 +1,5 @@
-import {React,Component} from "react";
-import { Button } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
+import { React,Component } from"react";
+import {Button,Form} from"react-bootstrap";
 import { evaluate } from "mathjs";
 
 const mainDiv = {
@@ -47,6 +46,7 @@ class Bisection extends Component{
         document.getElementById("ans").innerHTML=xm;
     }
 
+
     render(){
         return(
             <div>
@@ -72,4 +72,5 @@ class Bisection extends Component{
         )
     }
 }
+
 export default Bisection;
